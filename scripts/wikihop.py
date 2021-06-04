@@ -451,7 +451,7 @@ class WikihopQAModel(LightningModule):
         parser.add_argument('--resume-from-checkpoint', default=None, type=str)
         parser.add_argument('--fp16', default=False, action='store_true')
         parser.add_argument('--amp-level', default="O2", type=str)
-        parser.add_argument('--sentence-tokenize', default=True, action='store_true')
+        parser.add_argument('--sentence-tokenize', default=False, action='store_true')
 
         return parser
 
